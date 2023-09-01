@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600&display=swap');
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: #1f2a40;
+    padding-top: 4.9rem
+}
+
+header {
+    display: flex;
+    align-content: flex-start;
+    padding: 2rem;
+    background-color: #141b2d;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#logo {
+    margin: 0.2rem;
+}
+
+main {
+    padding: 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pokemon-name {
+    background-color: #141b2d;
+    display: inline-block;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer>button {
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffff;
+    border: 1px solid #ffff;
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    transition: all 200ms;
+}
+
+footer>button:hover {
+    background-color: #fff;
+    color: #141b2d;
+}

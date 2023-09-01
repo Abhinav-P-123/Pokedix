@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedix</title>
+    <link rel="stylesheet" href="details-styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Pokedix</h1>
+    </header>
+    <main>
+        <div class="img-details">
+            <img src="<%= frontImg %>" alt="<%= name %> Image" class="Pokemon-Image">
+            <div>
+                <h3 class="pokemonName">
+                    <%= name %>
+                </h3>
+                <div class="abilities-div">
+                    <h4 style="margin: 0">Abilities: </h4>
+                    <div>
+                        <% for (let x=0; x < abilities.length; x++) { %>
+                            <span>
+                                <%= abilities[x].ability.name %>
+                            </span>
+                            <% } %>
+                    </div>
+                </div>
+                <div class="types-div">
+                    <h4 style="margin: 0">Type: </h4>
+                    <div>
+                        <% for (let x=0; x < types.length; x++) { %>
+                            <span>
+                                <%= types[x].type.name %>
+                            </span>
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stats-div">
+            <h4 style="margin: 0">Stats: </h4>
+            <div>
+                <% for (let x=0; x < types.length; x++) { %>
+                    <span class="stat">
+                        <%= types[x].type.name %>
+                    </span>
+                    <% } %>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600&display=swap');
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: #1f2a40;
+    padding-top: 4.9rem
+}
+
+header {
+    display: flex;
+    align-content: flex-start;
+    padding: 2rem;
+    background-color: #141b2d;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#logo {
+    margin: 0.2rem;
+}
+
+main {
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.img-details {
+    display: flex;
+    gap: 3rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Pokemon-Image {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #141b2d;
+    border-radius: 0.4rem;
+}
+
+.pokemonName {
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+.abilities-div,
+.types-div {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.abilities-div>div,
+.types-div>div,
+.stats-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.abilities-div>div>span,
+.types-div>div>span,
+.stat {
+    background-color: #141b2d;
+    padding: 0.3rem 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.stats-div {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}

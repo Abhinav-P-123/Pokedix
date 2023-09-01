@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="homepage-styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Pokedix</h1>
+    </header>
+    <main>
+        <% for (let x=0; x < pokemonList.length; x++) { %>
+            <div class="pokemon-name" onclick="window.open('/pokemon?url=<%= pokemonList[x].url %>')">
+                <%= pokemonList[x].name %>
+            </div>
+            <% } %>
+    </main>
+    <footer>
+        <% if (previous !==null) { %>
+            <button onclick="window.open('/getPrevious?url=<%=previous%>', '_self')">Previous</button>
+            <% } else { %>
+                <spam></spam>
+                <% } %>
+                    <button onclick="window.open('/getNext?url=<%=next%>', '_self')">Next</button>
+    </footer>
+</body>
+
+</html>
