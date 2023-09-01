@@ -14,7 +14,7 @@
     </header>
     <main>
         <% for (let x=0; x < pokemonList.length; x++) { %>
-            <div class="pokemon-name" onclick="window.open('/pokemon?url=<%= pokemonList[x].url %>')">
+            <div class="pokemon-name" onclick="window.open('/pokemon?url=<%= pokemonList[x].url %>', '_self')">
                 <%= pokemonList[x].name %>
             </div>
             <% } %>
